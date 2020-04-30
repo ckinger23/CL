@@ -1,0 +1,67 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %}Coin Logic{% endblock %}
+{% block meta_description %}Track your favorite value investors and following
+what companies and industries they are investing in.{% endblock %}
+
+{% block body %}
+  <div class="container sm-margin-top">
+    <div class="row text-center lg-margin-bottom">
+      <h1>Insert</h1>
+      <h3 class="text-muted">
+      Follow the "Smart Money" and Become a Better Investor
+      </h3>
+    </div>
+    <div class="row text-center">
+      <div class="col-lg-4">
+        <i class="fa fa-fw fa-4x fa-bullhorn text-primary"></i>
+        <h2>Insert</h2>
+        <p class="text-muted">Insert Text</p>
+        <p>
+          <a href="#" class="btn btn-default">Sign up</a>
+        </p>
+        <hr/>
+      </div>
+      <div class="col-lg-4">
+        <i class="fa fa-fw fa-4x fa-database text-primary"></i>
+        <h2>Insert</h2>
+        <p class="text-muted">Insert Text</p>
+        <p>
+          <a href="#" class="btn btn-default">Sign up</a>
+        </p>
+        <hr/>
+      </div>
+      <div class="col-lg-4">
+        <i class="fa fa-fw fa-4x fa-trophy text-primary"></i>
+        <h2>Insert</h2>
+        <p class="text-muted">Insert Text</p>
+        <p>
+          <a href="#" class="btn btn-default">Sign up</a>
+        </p>
+        <hr/>
+      </div>
+
+      <h2>Welcome</h2>
+      <p>
+        Just as Robinhood has made investing more accessible through its
+        commission-free mobile and web applications, so too does CoinLogic
+        desire to provide an interface that makes valuable investment knowledge
+        available in a beautiful and easily approachable way.
+      </p>
+      <p>
+        CoinLogic provides the user with a personalized dashboard to access a
+        selected firm’s 13F filing. Unlike the publicly accessible data on the
+        SEC’s website, CoinLogic displays the information in a pleasant and
+        manipulable manner.
+      </p>
+      <p>
+        Since many regular investors have never heard of or have never worked
+        with 13F filings, our initial goal is to provide the following
+        informational page to inform our users.
+      </p>
+      <p>
+        <a href="{{ url_for('page.learn') }}" class="btn btn-default">Learn More</a>
+      </p>
+    </div>
+  </div>
+{% endblock %}

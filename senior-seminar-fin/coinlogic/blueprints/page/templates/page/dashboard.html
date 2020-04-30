@@ -1,0 +1,23 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %}Dashboard{% endblock %}
+{% block heading %}<h2>Dashboard</h2>{% endblock %}
+
+{% block body %}
+    <head>
+      <meta charset="UTF-8">
+      <title>Dropdown</title>
+    </head>
+    <body>
+    <form name="Companies" action='' method="post" >
+      <select name="company" method="GET" action="/dashboard">
+        {% for company in companies %}
+          <option value= "{{company}}" SELECTED>{{company}}</option>
+        {% endfor %}
+      </select>
+      <br>
+      <p><a class="btn btn-default" type="submit" value = 'Select' role="button">Get Table</a></p>
+    </form>
+    </body>
+
+{% endblock %}
